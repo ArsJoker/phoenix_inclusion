@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Феникс</title>
+<style>
+body {
+  margin:0;
+  padding:0;
+  background: url('https://images.unsplash.com/photo-1579823474713-d5f6acda6ad2?fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+.logo {
+  width:300px;
+  animation: pulse 3s infinite;
+  filter: drop-shadow(0 0 20px orange);
+}
+@keyframes pulse {
+  0% {transform: scale(1); filter: drop-shadow(0 0 20px orange);}
+  50% {transform: scale(1.05); filter: drop-shadow(0 0 40px orange);}
+  100% {transform: scale(1); filter: drop-shadow(0 0 20px orange);}
+}
+</style>
+</head>
+<body>
+<img src='fenix.png' class='logo'>
+</body>
+</html>
